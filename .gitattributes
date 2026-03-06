@@ -1,0 +1,6 @@
+* text=auto
+
+# Enforce LF line endings for Makefiles
+Makefile text eol=lf
+*.mk text eol=lf
+*.sh text eol=lf
