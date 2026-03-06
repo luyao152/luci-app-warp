@@ -11,7 +11,7 @@ on:
 
 env:
   PACKAGE_NAME: luci-app-warp
-  VERSION: 1.2.4
+  VERSION: 1.3.0
 
 jobs:
   build:
@@ -118,8 +118,8 @@ jobs:
           body: |
             ## Cloudflare WARP for OpenWrt ${{ github.ref_name }}
             
-            ### 功能特性
-            - 🚀 一键注册 Cloudflare WARP 账户
+            ### 功能特性 (usque 版)
+            - 🚀 一键注册 Cloudflare WARP 账户 (MASQUE)
             - 🌍 支持全局流量接管
             - 🇨🇳 可选绕过中国大陆IP
             - 🔑 支持 WARP+ License 升级
@@ -139,7 +139,7 @@ jobs:
             | `*mipsel_24kc*` | MT7621 设备 (小米路由器等) |
             
             ### 依赖
-            需要先安装：`wireguard-tools`, `kmod-wireguard`, `luci-proto-wireguard`, `curl`, `jsonfilter`
+            需要先安装：`usque`, `curl`, `jsonfilter`
           generate_release_notes: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

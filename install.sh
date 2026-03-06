@@ -40,8 +40,8 @@ install_deps() {
     
     opkg update
     
-    # 安装WireGuard
-    opkg install wireguard-tools kmod-wireguard luci-proto-wireguard
+    # 安装usque (MASQUE 客户端)
+    opkg install usque
     
     # 安装其他依赖
     opkg install curl jsonfilter
